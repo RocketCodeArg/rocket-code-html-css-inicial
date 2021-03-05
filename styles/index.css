@@ -11,6 +11,7 @@ body {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
     overflow-y: scroll;
+    margin: 0;
 }
 
 /* CARD */
@@ -285,7 +286,6 @@ body {
 .section-experiences__icon {
     height: 20px;
     width: 22px;
-    transform: translateX(-200%);
     background: white;
 }
 
@@ -297,8 +297,16 @@ body {
     display: flex;
 }
 
+.section-experiences__card-content:last-child {
+    padding-bottom: 20px;
+}
+
+.section-experiences__card-info {
+    margin-bottom: 10px;
+}
+
 .section-experiences__time {
-    margin-bottom: 16px;
+    margin-left: 10px;
     color: #8b88b1;
 }
 
@@ -436,11 +444,29 @@ textarea.form-input {
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        min-width: 768px;
+    .navbar__logo {
+        display: none;
     }
-    .navbar__section, .sections, .section-banner__scroll {
-        min-width: 768px;
+    .section-about-me__container, .section-servicess__container, .section-experiences__container, .section-my-work__container, .footer-contact__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-about-me__avatar-container {
+        margin: 25px auto 15px;
+    }
+    .section-about-me__card {
+        margin-left: 0;
+    }
+    .section-services__card, .section-experiences__card, .section-my-work__card {
+        margin-bottom: 40px;
+    }
+    .footer-contact__info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-contact__form-container {
+        margin-left: 0;
+        width: 100%;
     }
 }
 
