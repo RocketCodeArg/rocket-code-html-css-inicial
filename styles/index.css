@@ -462,6 +462,20 @@ textarea.form-input {
     }
     .section-about-me__card {
         margin-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-about-me__card-info .button-primary {
+        margin: 0 auto;
+    }
+    .section-about-me__card-info {
+        margin: 0 0 40px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .section-about-me__card-skills {
+        margin: 0 0 20px;
+        width: 100%;
     }
     .section-services__card, .section-experiences__card, .section-my-work__card {
         margin-bottom: 40px;
