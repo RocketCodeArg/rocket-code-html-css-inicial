@@ -447,7 +447,7 @@ textarea.form-input {
     .navbar__logo {
         display: none;
     }
-    .navbar__menu-link {
+    .navbar__menu {
         font-size: 14px;
     }
     .section-about-me__container, .section-servicess__container, .section-experiences__container, .section-my-work__container, .footer-contact__container {
