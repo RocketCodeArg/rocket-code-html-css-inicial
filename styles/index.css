@@ -450,6 +450,9 @@ textarea.form-input {
     .navbar__menu {
         font-size: 14px;
     }
+    .navbar__menu-list-item:last-of-type {
+        display: none;
+    }
     .section-about-me__container, .section-servicess__container, .section-experiences__container, .section-my-work__container, .footer-contact__container {
         display: flex;
         flex-direction: column;
